@@ -1,5 +1,6 @@
 /*
 Dark Light Mode by AlexanderWagnerDev.at
+Author: AlexanderWagnerDev.at
 */
 
 const btn = document.querySelector(".awdev-bl-toggle");
