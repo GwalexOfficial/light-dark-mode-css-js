@@ -1,5 +1,18 @@
-const btn = document.querySelector(".bl-toggle");
-const theme = document.querySelector("#theme-mode");
+/*
+Dark Light Mode by AlexanderWagnerDev.at
+*/
+
+const btn = document.querySelector(".awdev-bl-toggle");
+const theme = document.querySelector("#awdev-theme-mode");
+
+const darkmode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (darkmode) {
+    theme.href = "css/stylesheet-dark.css";
+} else {
+    theme.href = "css/stylesheet.css";
+}
+
 btn.addEventListener("click", function() {
     if (theme.getAttribute("href") == "css/stylesheet.css") {
         theme.href = "css/stylesheet-dark.css";
